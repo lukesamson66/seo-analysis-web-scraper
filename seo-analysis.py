@@ -4,7 +4,7 @@ import requests
 
 def main():
 
-    url = "https://www.globalleadingmanufacturing.com/steel-storage-tanks/"
+    url = input("Paste URL here: ")
     res = requests.get(url).text
     soup = BeautifulSoup(res, 'html.parser')
 
